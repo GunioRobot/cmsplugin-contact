@@ -21,9 +21,9 @@
 			}
 		});
 	}
-	
+
 	$(document).ready(function(){
-		
+
 		$('#id_spam_protection_method').change(function() {
 			var curOption = $('#id_spam_protection_method :selected');
 			updateVisibility(curOption.html().toLowerCase());
@@ -44,7 +44,7 @@
 		padding-left: 48px;
 		margin-left: 13em;
 	}
-	
+
 	{% if spam_protection_method != 1 or akismet_settings %}
 	div.form-row.akismet_api_key {
 		display: none;
